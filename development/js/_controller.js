@@ -1,9 +1,7 @@
-function Controller (obj)
+function Controller (sprite)
 {
 	window.onkeydown = function(e)
 	{
-		if(_moving)
-			return;
 
 	 	var key = e.keyCode ? e.keyCode : e.which;
 
