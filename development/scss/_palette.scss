@@ -1,0 +1,25 @@
+[_palette~="primary"] {background: #00BCD4;}
+[_palette~="dark-primary"] {background: #0097A7;}
+[_palette~="accent"] {background: #8BC34A;}
+[_palette~="light"] {background: #FFFFFF;}
+
+[_palette~="primary"], [_palette~="dark-primary"], [_palette~="accent"] {
+	color: #fff;
+}
+
+[_palette~="primary"] .caption, [_palette~="dark-primary"] .caption {
+	color: #B2EBF2;
+}
+
+[_palette~="light"] {
+	background: #fff;
+	color: #212121;
+}
+
+[_palette~="light"] .caption {
+	color: #727272;
+}
+
+[_palette~="primary"] a:hover, [_palette~="dark-primary"] a:hover, [_palette~="accent"] a:hover {
+	color: #fff;
+}

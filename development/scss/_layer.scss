@@ -1,0 +1,27 @@
+[_layer] {
+	position: relative;
+}
+[_layer~="1"] {
+	box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+	z-index: 1;
+}
+
+[_layer~="2"] {
+	box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
+	z-index: 2;
+}
+
+[_layer~="3"] {
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.23), 0 10px 40px rgba(0, 0, 0, 0.19);
+	z-index: 3;
+}
+
+[_layer~="4"] {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.22), 0 14px 56px rgba(0, 0, 0, 0.25);
+	z-index: 4;
+}
+
+[_layer~="5"] {
+	box-shadow: 0 15px 24px rgba(0, 0, 0, 0.22), 0 19px 76px rgba(0, 0, 0, 0.3);
+	z-index: 5;
+}
