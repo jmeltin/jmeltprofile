@@ -4,35 +4,42 @@
 	<meta charset="UTF-8">
 	<title>jmelt.in</title>
 	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<script src="js/pixi.min.js"></script>
 </head>
-<body _palette="value-300">
-	<div class="container" _palette="light">
+<body _palette="value-200">
+	<div class="container">
 
 		<!--################################
 		##############  HEADER  ############
 		#################################-->
-		<div class="header group" _grid="2/3" _palette="value-900">
-			<div class="header-update">
-				<p>header update</p>
+		<div class="header group" _grid="2/3" _palette="value-800">
+			<div class="header-update" _palette="value-400">
+				<p>-</p>
 			</div><!-- end header-update -->
 		</div><!-- end header -->
 
 		<!--################################
 		##############  MAIN  ##############
 		#################################-->
-		<div class="main group" _grid="3/3" _palette="value-900">
-			<div class="main-header">
+		<div class="main group" _grid="3/3" _palette="value-800">
+			<div class="main-header" _palette="value-400">
 				<ul class="main-header-list">
-					<li>Github</li>
-					<li>Twitter</li>
+					<li>--</li>
 				</ul>
 			</div><!-- end main-header -->
 
-			<div class="main-body">
-				<p>mainbody</p>
+			<div class="main-body" id="game">
+				<!--################################
+				#############  PLANET  #############
+				#################################-->
+				<!-- <div class="mouth" _palette="value-900"></div> -->
+				<!-- <div class="planet" _palette="value-400"></div> -->
 			</div><!-- end main-bidy -->
 		</div><!-- end main -->
 
 	</div>
+	
+	<script src="js/script.js"></script>
 </body>
 </html>

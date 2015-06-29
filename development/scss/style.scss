@@ -4,9 +4,21 @@
 @import 'palette';
 @import 'type';
 
+$gold: 1.61803399;
+
+$container-width: 900px;
+$mainBody-height: 700px;
+
 $plane-height: 7px;
-$plane-angle: $plane-height * 1.618;
+$plane-angle: $plane-height * $gold;
 $plane-width: $plane-angle * 2;
+$plane-color: #757575;
+
+
+.container {
+	width: $container-width;
+}
+
 
 .header {
 	position: relative;
@@ -19,11 +31,15 @@ $plane-width: $plane-angle * 2;
 	position: absolute;
 	top: -$plane-height;
 	left: 0;
-	border-bottom: $plane-height solid #616161;
+	border-bottom: $plane-height solid $plane-color;
 	border-left: $plane-angle solid transparent;
 	border-right: $plane-angle solid transparent;
 	width: calc(100% - #{$plane-width});
 	height: 0px;
+}
+
+.header-update {
+	padding: 2px 10px;
 }
 
 .main {
@@ -36,11 +52,15 @@ $plane-width: $plane-angle * 2;
 	position: absolute;
 	top: -$plane-height;
 	left: 0;
-	border-bottom: $plane-height solid #616161;
+	border-bottom: $plane-height solid $plane-color;
 	border-left: $plane-angle solid transparent;
 	border-right: $plane-angle solid transparent;
 	width: calc(100% - #{$plane-width});
 	height: 0px;
+}
+
+.main-header {
+	padding: 2px 10px;
 }
 
 .main-header-list {
@@ -52,5 +72,11 @@ $plane-width: $plane-angle * 2;
 .main-header-list > li {
 	display: inline;
 	margin-right: $plane-height;
+}
+
+.main-body {
+	position: relative;
+	overflow: hidden;
+	height: $mainBody-height;
 }
 

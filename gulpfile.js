@@ -1,8 +1,9 @@
 var gulp        = require('gulp');
-var browserSync = require('browser-sync').create();
-var sass        = require('gulp-sass');
-var minifyHTML  = require('gulp-minify-html');
-var uglify      = require('gulp-uglify');
+	browserSync = require('browser-sync').create(),
+	sass        = require('gulp-sass'),
+	minifyHTML  = require('gulp-minify-html'),
+	uglify      = require('gulp-uglify'),
+	include     = require('gulp-include');
 
 
 gulp.task('serve', ['sass'], function() {
@@ -37,9 +38,11 @@ gulp.task('minify-html', function() {
 });
 
 gulp.task('compress', function() {
-	return gulp.src('development/js/*.js')
-		.pipe(uglify())
-		.pipe(gulp.dest('./production/js/'));
+	return gulp.src('development/js/script.js')
+		//.pipe(uglify())
+		.pipe(include())
+		.pipe(gulp.dest('./production/js/'))
+		.pipe(browserSync.stream());
 });
 
 gulp.task('default', ['serve']);
