@@ -1,10 +1,6 @@
-body {
-	font-size: 100%;
-}
-
 .container {
-	width: 960px;
-	margin: 0 auto;
+	width: 900px;
+	margin: 15px auto 0 auto;
 }
 
 .group:after {
@@ -16,7 +12,7 @@ body {
 [_grid] {
 	float: left;
 	position: relative;
-	padding: 20px 20px 15px 20px;
+	padding: 0px 20px 0px 20px;
 }
 
 [_grid~="1/3"] {

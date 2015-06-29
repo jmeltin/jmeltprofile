@@ -19,7 +19,7 @@ gulp.task('serve', ['sass'], function() {
 
 gulp.task('sass', function() {
 	return gulp.src("development/scss/*.scss")
-		.pipe(sass())
+		.pipe(sass.sync().on('error', sass.logError))
 		.pipe(gulp.dest("production/css"))
 		.pipe(browserSync.stream());
 });

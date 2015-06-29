@@ -4,7 +4,53 @@
 @import 'palette';
 @import 'type';
 
-body {
-	background-color: #000;
-	color: #ffffff;
+$plane-height: 7px;
+$plane-angle: $plane-height * 1.618;
+$plane-width: $plane-angle * 2;
+
+.header {
+	position: relative;
+	margin-top: $plane-height;
+	margin-left: $plane-angle;
 }
+
+.header:before {
+	content: "";
+	position: absolute;
+	top: -$plane-height;
+	left: 0;
+	border-bottom: $plane-height solid #616161;
+	border-left: $plane-angle solid transparent;
+	border-right: $plane-angle solid transparent;
+	width: calc(100% - #{$plane-width});
+	height: 0px;
+}
+
+.main {
+	position: relative;
+	margin-top: $plane-height;
+}
+
+.main:before {
+	content: "";
+	position: absolute;
+	top: -$plane-height;
+	left: 0;
+	border-bottom: $plane-height solid #616161;
+	border-left: $plane-angle solid transparent;
+	border-right: $plane-angle solid transparent;
+	width: calc(100% - #{$plane-width});
+	height: 0px;
+}
+
+.main-header-list {
+	list-style-type: none;
+	display: inline;
+	padding: 0;
+}
+
+.main-header-list > li {
+	display: inline;
+	margin-right: $plane-height;
+}
+
